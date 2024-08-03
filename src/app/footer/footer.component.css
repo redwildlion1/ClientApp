@@ -1,0 +1,10 @@
+.btn{
+    border-radius: 20px;
+    background-color: #157a72;
+}
+
+.bg-light{
+    background-color: #2f3131!important;
+    color: white;
+    border-radius: 20px 20px 0 0;
+}

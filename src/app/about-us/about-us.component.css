@@ -1,0 +1,77 @@
+.first{
+    background: url('../../assets/images/abouts-us/arhitect.jpg') no-repeat center center/cover ;
+    color: white;
+    height: 85vh;
+    padding-top: 60px;
+    
+}
+
+.maxwidth{
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+    min-width: 300px;
+    position: relative;
+}
+
+.first h1{
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+
+.cox{
+    min-width: 65%;
+    padding-left: 15px;
+    width: 50%;
+    float: left;
+    padding-bottom: 0px;
+}
+
+.white-bar{
+    background: white;
+    height: 5px;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.white{
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.white p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: auto!important;
+}
+
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4rem;
+}
+
+.grey-bar{
+    background: rgb(81, 81, 81);
+    height: 5px;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}

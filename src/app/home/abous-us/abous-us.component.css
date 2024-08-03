@@ -1,0 +1,20 @@
+@media screen and (max-width: 1200px) {
+    .img-fluid{
+        display: none;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ }
+
+ @media screen and (max-width: 576px) {
+    .row{
+        margin-top: 1rem!important;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+
+ }

@@ -1,0 +1,18 @@
+<div class="container my-5">
+  <div class="categories-line">
+    <div class="category"  *ngFor="let category of categories; let i = index" (click)="togglePanel(i)" [ngClass]="{'active' : activePanelIndex === i}">
+      <i style="color:black" class="{{category.icon}}"></i>
+      <h3>{{category.name}}</h3>
+    </div>
+  </div>
+  <div class="panel my-4" [ngClass]="{'unblur': fadeIn}">
+    <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-4" *ngFor="let subcategory of categories[activePanelIndex].subcategories">
+              <a [routerLink]="['/categorii', categories[activePanelIndex].id , subcategory.id]" class="icon pb-2">
+                <mat-icon class="icon-img material-icons-outlined" fontIcon="{{subcategory.icon}}"></mat-icon>
+                <h5 class="icon-text text-align-center">{{subcategory.name}}</h5>
+              </a>
+            </div>
+        </div>
+      </div>
+</div>

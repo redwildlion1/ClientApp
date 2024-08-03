@@ -1,0 +1,67 @@
+.mx-33{
+    max-width: 30% !important;
+}
+
+@media screen and (max-width: 768px) {
+    .mx-33 {
+        max-width: 80% !important;
+        margin: 20px;
+    }
+}
+
+.jsa{
+    justify-content: space-around !important;
+}
+
+.card{
+    border: 1px solid #f0f0f0;
+    border-radius: 30px;
+    box-shadow: 4px 10px 10px 4px rgba(21, 122, 114, 0.4);
+    background-color: rgb(255, 255, 255);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 10px 10px rgba(21, 122, 114, 0.8);
+}
+
+.card{
+    transition: 0.3s;
+}
+
+.card:not(:hover){
+    transform: scale(1);
+}
+
+
+.card-text{
+    padding-top: 0.7rem;
+}
+
+.buton{
+    background-color: #157a72;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 1.2rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 576px) {
+    .mx-33 {
+        max-width: 100% !important;
+        margin: 20px;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+}

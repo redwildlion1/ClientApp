@@ -1,0 +1,63 @@
+<div class="container pb-5 mb-5">
+  <h3 class="mt-3">Asfaltare</h3>
+  <mat-tab-group #matTabGroup dynamicHeight>
+    <mat-tab label="Date generale">
+      <ng-template matTabContent>
+        <form [formGroup]="form1" class="d-flex flex-column mt-4">
+          <label for="descriere">Descriere scurta:</label>
+          <input placeholder="Ex : Comuna Bradu 100mp grunjos" type="text" id="descriere" formControlName="descriere" name="descriere">
+          <label for="durata">Cand vreti sa faceti lucrarea:</label>
+          <select id="durata" formControlName="durata" name="durata">
+            <option [defaultSelected]="1" value="1">Cat mai devreme</option>
+            <option value="2">2 zile</option>
+            <option value="3">3 zile</option>
+            <option value="4">4 zile</option>
+            <option value="5">5 zile</option>
+          </select>
+          <label for="judet">Judetul:</label>
+          <input type="text" id="judet" formControlName="judet" name="judet" placeholder="Arges">
+          <button type="button" [disabled]="tabStates[1]" class="mt-3" (click)="matTabGroup.selectedIndex = 1">Inainte</button>
+        </form>
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="Detalii">
+      <ng-template matTabContent>
+        <form [formGroup]="form2" class="d-flex flex-column mt-4">
+          <label for="details">Descrieti cat mai detaliat de ce aveti nevoie, orice nu apare mai jos, orice doriti in plus</label>
+          <textarea name="details" id="details" cols="30" rows="2" formControlName="details"></textarea>
+          <label for="place">Ce doriti sa asfaltati?</label>
+          <input type="text" id="place" formControlName="place" name="place" placeholder="Ex : drum de acces">
+          <label for="ready">Suprafata este finisata, gata de asfaltare?</label>
+          <input type="text" id="ready" formControlName="ready" name="ready" placeholder="Ex : Nu (este o poteca)">
+          <label for="type">
+            Este nevoie de asfalt grosier și fin (obișnuit) sau numai grosier </label>
+          <select id="type" formControlName="type" name="type">
+            <option value="1">Grosier și fin</option>
+            <option value="2">Numai grosier (nu este recomandat)</option>
+          </select>
+          <label for="surface">Suprafata</label>
+          <input type="text" id="surface" formControlName="surface" name="surface" placeholder="Ex : 100mp">
+          <button type="button" [disabled]="tabStates[2]" class="mt-3" (click)="matTabGroup.selectedIndex = 2">Inainte</button>
+        </form>
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="Contact" >
+      <ng-template matTabContent>
+        <form [formGroup]="form3" class="d-flex flex-column mt-4 contact-form">
+          <label for="name">Numele dumneavoastra:</label>
+          <input type="text" id="name" formControlName="name" name="name" >
+          <label for="email">Email:</label>
+          <input type="email" id="email" formControlName="email" name="email" >
+          <label for="phone">Telefon:</label>
+          <input type="text" id="phone" formControlName="phone" name="phone" >
+          <p>Protejăm cu atenție datele dvs. personale, sunt accesibile numai executanților interesați.</p>
+          <div class="terms-div fs-2 d-flex flex-row">
+          <input type="checkbox" formControlName="terms" name="terms" class="checkbox ">
+          <label for="terms">Sunt de acord cu <a class="terms" href="/termeni-si-conditii">termenii si conditiile</a></label>
+        </div>
+          <button type="submit" [disabled]="!form3.valid" class="mt-3">Inainte</button>
+        </form>
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+</div>

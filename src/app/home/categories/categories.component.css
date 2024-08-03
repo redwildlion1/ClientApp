@@ -1,0 +1,102 @@
+.category, .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #00000096;
+}
+
+.categories-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    color : #00000090;
+}
+
+.categories-line .category {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.categories-line .category:hover {
+    transform: scale(1.05);
+}
+
+.active{
+    scale : 1.10;
+    color: #000;
+}
+
+.panel {
+    width: 100%;
+    margin-top: 1rem;
+    display: grid;
+    margin: 0 auto;
+    filter: blur(2px);
+    transition: filter 0.5s ease-out;
+}
+
+@keyframes unblurAnimation {
+    0% {
+        filter: blur(2px);
+    }
+
+    90% {
+        filter: blur(0);
+    }
+}
+
+.panel.unblur {
+    filter: blur(0);
+    animation: unblurAnimation 0.3s forwards;
+}
+
+.icon {
+    font-size: 2rem;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.614);
+    transition: border-bottom 0.5s ease;
+}
+
+.icon:hover {
+    cursor: pointer;
+    border-bottom: 3px solid black;
+    color: black;
+}
+
+.container {
+    width: 100%;
+}
+
+.icon-img {
+    display: contents;
+    font-size: 3rem;
+}
+
+.icon-text {
+    margin: 0;
+    margin-left: 0.4rem;
+}
+
+@media screen and (max-width: 576px) {
+.categories-line{
+    width: 100%;
+    padding: 0;
+}
+ h3{
+         font-size: 1.2rem;
+ }
+    .icon-img{
+        font-size: 2.3rem;
+    }   
+}
+
+@media screen and (max-width: 370px) {
+    h3{
+        font-size: 1rem;
+    }
+  
+}

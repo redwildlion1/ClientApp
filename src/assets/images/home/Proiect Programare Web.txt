@@ -1,0 +1,26 @@
+Proiect programare web
+----------------------
+Specificatii initiale
+- individual
+- se porneste de la un template free (sapt 2) cu HTML si CSS si foloseste informatii din Arges
+- se dezvolta in fiecare saptamana (sapt 3) se incarca imagini, se introduc informatii, link-uri
+- se realizeaza formatari si introduceri/eliminari de pagini, actualizari meniuri (sapt 4)
+- se folosesc fisiere text in proiect (sapt 4-5)
+- se utilizeaza scripturi php (sapt 6)
+- se foloseste o baza de date pentru stocarea informatiilor (sapt 8)
+- prezentarea finala a proiectului va fi in sapt 9.
+
+Tematica obligatorie a aplicatiei web:
+
+- Obiectiv turistic din jud Arges
+
+sau
+
+- Prezentarea unui eveniment din judetul Arges
+
+Limita memorie <= 50 Mo
+
+Punctaj: 2 puncte 
+
+
+

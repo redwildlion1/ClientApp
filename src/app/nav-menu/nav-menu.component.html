@@ -1,0 +1,63 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-0"
+  >
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">Bidro</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow cox">
+            <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >
+            <a class="nav-link text-dark" [routerLink]="['/about-us']"><i class="bi bi-info-circle"></i> Despre noi</a>
+            </li>
+            <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >
+            <a class="nav-link text-dark" [routerLink]="['/categorii']"><i class="bi bi-grid"></i> Categorii</a>
+            </li>
+            <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >
+            <a class="nav-link text-dark" [routerLink]="['/contact']"><i class="bi bi-book"></i>Revista Bidro</a>
+            </li>
+            </ul>
+      </div>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+        style="flex: none;"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <button class="btn nav-link text-dark">Afla mai multe</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
